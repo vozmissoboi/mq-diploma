@@ -258,7 +258,6 @@ body {
 
 .trends {
     width: 100%;
-    max-width: 1660px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 65px;
@@ -835,15 +834,6 @@ a {
     .trends-container {
         flex-wrap: wrap;
     }
-    .trend-card {
-        width: calc((100% - 4px) / 2);
-    }
-    .trend-card:nth-child(even) {
-        margin-left: 4px;
-    }
-    .trend-card:nth-child(n+3) {
-        margin-top: 4px;
-    }
     .trend-image {
         width: 100%;
     }
@@ -924,6 +914,21 @@ a {
         margin-left: 0;
     }
     .trend-card:nth-child(n+2) {
+        margin-top: 4px;
+    }
+}
+
+@media (max-height: 641px) {
+    .trends-container {
+        flex-wrap: wrap;
+    }
+    .trend-card {
+        width: calc((100% - 4px) / 2);
+    }
+    .trend-card:nth-child(even) {
+        margin-left: 4px;
+    }
+    .trend-card:nth-child(n+3) {
         margin-top: 4px;
     }
 }
